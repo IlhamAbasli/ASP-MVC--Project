@@ -2532,13 +2532,17 @@
         }
       },
       "Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "6.0.31"
+        },
         "runtime": {
           "Domain.dll": {}
         }
       },
       "Repository/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.31"
         },
         "runtime": {
           "Repository.dll": {}
