@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Enums\" />
     <Folder Include="Helpers\Extensions\" />
-    <Folder Include="Services\Interfaces\" />
   </ItemGroup>
 
   <ItemGroup>

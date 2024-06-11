@@ -2,6 +2,10 @@ using Domain.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Repository.Data;
+using Repository.Repository;
+using Repository.Repository.Interfaces;
+using Service.Services;
+using Service.Services.Interfaces;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +22,14 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>()
                                                      .AddDefaultTokenProviders();
+
+builder.Services.Configure<IdentityOptions>(opt =>
+{
+
+});
+
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 var app = builder.Build();
 

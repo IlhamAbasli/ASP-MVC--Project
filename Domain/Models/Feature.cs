@@ -9,7 +9,6 @@ namespace Domain.Models
 {
     public class Feature : BaseEntity
     {
-        public string FeatureIcon { get; set; }
         public string FeatureName { get; set; }
         public string FeatureDesc { get; set; }
     }

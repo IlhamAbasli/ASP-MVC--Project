@@ -25,10 +25,11 @@ namespace Repository.Data
         public DbSet<SliderInfo> SliderInfos { get; set; }
         public DbSet<Quality> Qualities { get; set; }
         public DbSet<Basket> Baskets { get; set; }
+        public DbSet<Banner> Banners { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(builder);
+            base.OnModelCreating(modelBuilder);
         }
 
     }

@@ -13,6 +13,8 @@ namespace Domain.Models
         public string Description { get; set; }
         public int RatingCount { get; set; }
         public int CategoryId { get; set; }
+        public int Count { get; set; }
+        public int SellingCount { get; set; } = 0;
         public Category Category { get; set; }        
         public int DetailId { get; set; }
         public ProductDetail Detail { get; set; }
