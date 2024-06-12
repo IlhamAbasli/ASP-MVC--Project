@@ -10924,11 +10924,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\Asp-Project.csproj",
+      "projectUniqueName": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Asp-Project.csproj",
       "projectName": "Asp-Project",
-      "projectPath": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\Asp-Project.csproj",
+      "projectPath": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Asp-Project.csproj",
       "packagesPath": "C:\\Users\\FX706HE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\obj\\",
+      "outputPath": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\FX706HE\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10945,8 +10945,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Service\\Service.csproj"
+            "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Service\\Service.csproj"
             }
           }
         }

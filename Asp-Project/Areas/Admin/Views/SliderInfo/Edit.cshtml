@@ -1,0 +1,36 @@
+﻿@model SliderInfoEditVM
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <strong class="text-success">Edit Slider info</strong>
+        </div>
+        <div class="card-body card-block">
+            <div>
+                <img src="~/img/@Model.ExistBackground" alt="Alternate Text" style="border: 3px double black" />
+            </div>
+            <form asp-action="Edit" method="post" class="mt-4" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class=" form-control-label">Enter title</label>
+                    <input asp-for="Title" type="text" placeholder="Enter here..." class="form-control  mb-2" maxlength="100">
+                    <span class="text-danger" asp-validation-for="Title"></span>
+
+                    <label class=" form-control-label">Enter description</label>
+                    <input asp-for="Description" type="text" placeholder="Enter here..." class="form-control  mb-2" maxlength="100">
+                    <span class="text-danger" asp-validation-for="Description"></span>
+
+                    <label class=" form-control-label">Upload new background image</label>
+                    <input asp-for="NewBackground" class="form-control  mb-2">
+                    <span class="text-danger" asp-validation-for="NewBackground"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">
+                    <i class="fa fa-dot-circle-o"></i> Submit
+                </button>
+                <a type="reset" asp-action="Index" class="btn btn-danger btn-sm">
+                    <i class="fa fa-ban"></i> Reset
+                </a>
+            </form>
+        </div>
+    </div>
+</div>
+

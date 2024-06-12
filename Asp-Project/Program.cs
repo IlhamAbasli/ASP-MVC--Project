@@ -34,6 +34,10 @@ builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<ISettingRepository, SettingRepository>();
 builder.Services.AddScoped<ISliderService, SliderService>();
 builder.Services.AddScoped<ISliderRepository, SliderRepository>();
+builder.Services.AddScoped<ISliderInfoService, SliderInfoService>();
+builder.Services.AddScoped<ISliderInfoRepository, SliderInfoRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ISliderInfoRepository, SliderInfoRepository>();
 
 var app = builder.Build();
 

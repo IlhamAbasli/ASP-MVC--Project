@@ -16,10 +16,9 @@ namespace Domain.Models
         public int Count { get; set; }
         public int SellingCount { get; set; } = 0;
         public Category Category { get; set; }        
-        public int DetailId { get; set; }
-        public ProductDetail Detail { get; set; }
         public ICollection<ProductImages> ProductImages { get; set; }
         public ICollection<Comment> Comments { get; set; }
+        public ICollection<ProductDetail> Details { get; set; }
 
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Domain\\Domain.csproj": {}
+    "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Domain\\Domain.csproj": {
+    "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\FX706HE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FX706HE\\AppData\\Roaming\\NuGet\\NuGet.Config",

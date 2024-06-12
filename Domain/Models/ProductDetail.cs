@@ -13,6 +13,8 @@ namespace Domain.Models
         public string OriginCountry { get; set; }
         public int QualityId { get; set; }
         public Quality Qualities { get; set; }
+        public int ProductId { get; set; }
+        public Product Product { get; set; }
         
     }
 }

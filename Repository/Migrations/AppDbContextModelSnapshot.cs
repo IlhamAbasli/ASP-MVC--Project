@@ -292,9 +292,6 @@ namespace Repository.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("DetailId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -311,8 +308,6 @@ namespace Repository.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.HasIndex("DetailId");
-
                     b.ToTable("Products");
                 });
 
@@ -327,6 +322,9 @@ namespace Repository.Migrations
                     b.Property<string>("OriginCountry")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
                     b.Property<int>("QualityId")
                         .HasColumnType("int");
 
@@ -337,6 +335,8 @@ namespace Repository.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
 
                     b.HasIndex("QualityId");
 
@@ -437,6 +437,9 @@ namespace Repository.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("BackgroundImage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -621,24 +624,24 @@ namespace Repository.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Models.ProductDetail", "Detail")
-                        .WithMany()
-                        .HasForeignKey("DetailId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Category");
-
-                    b.Navigation("Detail");
                 });
 
             modelBuilder.Entity("Domain.Models.ProductDetail", b =>
                 {
+                    b.HasOne("Domain.Models.Product", "Product")
+                        .WithMany("Details")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Domain.Models.Quality", "Qualities")
                         .WithMany("ProductDetails")
                         .HasForeignKey("QualityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Product");
 
                     b.Navigation("Qualities");
                 });
@@ -723,6 +726,8 @@ namespace Repository.Migrations
             modelBuilder.Entity("Domain.Models.Product", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("Details");
 
                     b.Navigation("ProductImages");
                 });
