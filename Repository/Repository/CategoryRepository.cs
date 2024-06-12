@@ -31,7 +31,7 @@ namespace Repository.Repository
 
         public async Task Delete(int id)
         {
-            var existCategory = await _context.Categories.FirstOrDefaultAsync(m => m.Id == id);
+            var existCategory = await GetById(id);
             _context.Categories.Remove(existCategory);
             await _context.SaveChangesAsync();
         }

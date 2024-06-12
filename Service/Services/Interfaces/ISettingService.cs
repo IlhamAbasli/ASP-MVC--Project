@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repository.Repository.Interfaces
+namespace Service.Services.Interfaces
 {
-    public interface ISettingRepository
+    public interface ISettingService
     {
         Task<List<Setting>> GetAll();
         Task<Setting> GetById(int id);
         Task Create(Setting setting);
-        Task Edit (int id,Setting setting);
+        Task Edit(int id, Setting setting);
         Task Delete(int id);
     }
 }

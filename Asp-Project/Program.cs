@@ -30,6 +30,8 @@ builder.Services.Configure<IdentityOptions>(opt =>
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ISettingService, SettingService>();
+builder.Services.AddScoped<ISettingRepository, SettingRepository>();
 
 var app = builder.Build();
 
