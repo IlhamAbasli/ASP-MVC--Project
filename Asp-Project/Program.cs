@@ -32,6 +32,8 @@ builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<ISettingRepository, SettingRepository>();
+builder.Services.AddScoped<ISliderService, SliderService>();
+builder.Services.AddScoped<ISliderRepository, SliderRepository>();
 
 var app = builder.Build();
 

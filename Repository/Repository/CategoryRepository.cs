@@ -40,8 +40,6 @@ namespace Repository.Repository
         {
             var existCategory = await GetById(id);
 
-            if (existCategory is null) return;
-
             existCategory.Name = category.Name;
             await _context.SaveChangesAsync();
         }

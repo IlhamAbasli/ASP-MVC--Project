@@ -1245,6 +1245,10 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\img\\35d6fe86-36a6-4801-8e37-6b70b12bdda0-hero-img-1.png",
+      "PackagePath": "staticwebassets\\img\\35d6fe86-36a6-4801-8e37-6b70b12bdda0-hero-img-1.png"
+    },
+    {
       "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\img\\avatar.jpg",
       "PackagePath": "staticwebassets\\img\\avatar.jpg"
     },
@@ -1283,6 +1287,10 @@
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\img\\cart-page-header-img.jpg",
       "PackagePath": "staticwebassets\\img\\cart-page-header-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\img\\d9659852-cdc9-4a81-99ba-9f9cc2a50521-hero-img-2.jpg",
+      "PackagePath": "staticwebassets\\img\\d9659852-cdc9-4a81-99ba-9f9cc2a50521-hero-img-2.jpg"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\img\\emptyUser.png",

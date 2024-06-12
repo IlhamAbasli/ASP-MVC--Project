@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TVC3ss96qigLO5bJv3UvTTdG8ybErSaYl+opYYGCACY=",
+  "Hash": "yGsulZXvp6JDiUqpoqyW5IYlpnxbAd0+nNwRGCOuH3E=",
   "Source": "Asp-Project",
   "BasePath": "_content/Asp-Project",
   "Mode": "Default",
@@ -5945,6 +5945,25 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\img\\35d6fe86-36a6-4801-8e37-6b70b12bdda0-hero-img-1.png",
+      "SourceId": "Asp-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\",
+      "BasePath": "_content/Asp-Project",
+      "RelativePath": "img/35d6fe86-36a6-4801-8e37-6b70b12bdda0-hero-img-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\35d6fe86-36a6-4801-8e37-6b70b12bdda0-hero-img-1.png"
+    },
+    {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\img\\avatar.jpg",
       "SourceId": "Asp-Project",
       "SourceType": "Discovered",
@@ -6133,6 +6152,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\cart-page-header-img.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\img\\d9659852-cdc9-4a81-99ba-9f9cc2a50521-hero-img-2.jpg",
+      "SourceId": "Asp-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\",
+      "BasePath": "_content/Asp-Project",
+      "RelativePath": "img/d9659852-cdc9-4a81-99ba-9f9cc2a50521-hero-img-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\d9659852-cdc9-4a81-99ba-9f9cc2a50521-hero-img-2.jpg"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\wwwroot\\img\\emptyUser.png",

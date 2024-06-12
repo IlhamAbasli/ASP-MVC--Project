@@ -55,6 +55,7 @@ namespace Asp_Project.Areas.Admin.Controllers
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id is null) return BadRequest();
@@ -92,6 +93,10 @@ namespace Asp_Project.Areas.Admin.Controllers
             }
 
             if (id is null) return BadRequest();
+
+            var category = await _categoryService.GetById((int)id);
+
+            if (category is null) return NotFound();
 
             await _categoryService.Edit((int) id,new Category { Name = request.CategoryName });
 

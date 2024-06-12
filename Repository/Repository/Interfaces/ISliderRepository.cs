@@ -12,7 +12,7 @@ namespace Repository.Repository.Interfaces
         Task<List<Slider>> GetAll();
         Task<Slider> GetById(int id);
         Task Create (Slider slider);
-        Task Delete(int id);    
+        Task Delete(Slider slider);    
         Task Edit(int id,Slider slider);
     }
 }

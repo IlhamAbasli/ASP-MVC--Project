@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\repository\\repository\\settingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\settingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\asp-project\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\repository\\repository\\sliderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\sliderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\asp-project\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\repository\\repository\\interfaces\\isliderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\interfaces\\isliderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\asp-project\\areas\\admin\\views\\slider\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\areas\\admin\\views\\slider\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\repository\\repository\\interfaces\\isettingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\interfaces\\isettingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\repository\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\repository\\repository\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\repository\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\asp-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-project\\asp-project\\asp-project\\viewmodels\\sliders\\admin\\slidercreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\viewmodels\\sliders\\admin\\slidercreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SettingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\SettingRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repository\\SettingRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\SettingRepository.cs",
-              "RelativeToolTip": "Repository\\Repository\\SettingRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T15:17:12.111Z",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeDocumentMoniker": "Asp-Project\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeToolTip": "Asp-Project\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T19:51:09.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ISettingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\Interfaces\\ISettingRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repository\\Interfaces\\ISettingRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\Interfaces\\ISettingRepository.cs",
-              "RelativeToolTip": "Repository\\Repository\\Interfaces\\ISettingRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "SliderCreateVM.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\ViewModels\\Sliders\\Admin\\SliderCreateVM.cs",
+              "RelativeDocumentMoniker": "Asp-Project\\ViewModels\\Sliders\\Admin\\SliderCreateVM.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\ViewModels\\Sliders\\Admin\\SliderCreateVM.cs",
+              "RelativeToolTip": "Asp-Project\\ViewModels\\Sliders\\Admin\\SliderCreateVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T15:16:44.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Repository\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Repository\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T15:08:26.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\Interfaces\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repository\\Interfaces\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\Interfaces\\ICategoryRepository.cs",
-              "RelativeToolTip": "Repository\\Repository\\Interfaces\\ICategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T15:04:35.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repository\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\CategoryRepository.cs",
-              "RelativeToolTip": "Repository\\Repository\\CategoryRepository.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T15:04:32.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SliderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\SliderRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repository\\SliderRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\SliderRepository.cs",
-              "RelativeToolTip": "Repository\\Repository\\SliderRepository.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA6wCoAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T14:59:34.611Z",
+              "WhenOpened": "2024-06-12T19:50:28.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ISliderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\Interfaces\\ISliderRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repository\\Interfaces\\ISliderRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Repository\\Repository\\Interfaces\\ISliderRepository.cs",
-              "RelativeToolTip": "Repository\\Repository\\Interfaces\\ISliderRepository.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAwwA8AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T14:58:35.244Z",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Asp-Project\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "RelativeToolTip": "Asp-Project\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T19:27:03.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\Program.cs",
-              "RelativeDocumentMoniker": "Asp-Project\\Program.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\Program.cs",
-              "RelativeToolTip": "Asp-Project\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAABEAAAA",
+              "DocumentIndex": 0,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "Asp-Project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-Project\\Asp-Project\\Asp-Project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "Asp-Project\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKQAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T13:36:00.332Z"
+              "WhenOpened": "2024-06-12T18:35:29.976Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -21,9 +21,9 @@ namespace Service.Services
             await _settingRepository.Create(setting);
         }
 
-        public async Task Delete(int id)
+        public async Task Delete(Setting setting)
         {
-            await _settingRepository.Delete(id);
+            await _settingRepository.Delete(setting);
         }
 
         public async Task Edit(int id, Setting setting)
@@ -31,7 +31,7 @@ namespace Service.Services
             await _settingRepository.Edit(id, setting);
         }
 
-        public async Task<List<Setting>> GetAll()
+        public async Task<Dictionary<int, Dictionary<string, string>>> GetAll()
         {
             return await _settingRepository.GetAll();
         }

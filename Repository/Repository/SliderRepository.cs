@@ -23,10 +23,9 @@ namespace Repository.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(int id)
+        public async Task Delete(Slider slider)
         {
-            var existData = await GetById(id);
-            _context.Sliders.Remove(existData);
+            _context.Sliders.Remove(slider);
             await _context.SaveChangesAsync();
         }
 

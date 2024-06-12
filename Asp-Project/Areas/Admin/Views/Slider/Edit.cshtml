@@ -1,0 +1,32 @@
+﻿@model SliderEditVM
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <strong class="text-success">Create Slider</strong>
+        </div>
+        <div class="card-body card-block">
+            <div>
+                <img src="~/img/@Model.ExistImage" alt="Alternate Text" style="border: 3px double black" />
+            </div>
+            <form asp-action="Edit" method="post" class="mt-4" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class=" form-control-label">Enter slider text</label>
+                    <input asp-for="SliderText" type="text" placeholder="Enter here..." class="form-control  mb-2" maxlength="100">
+                    <span class="text-danger" asp-validation-for="SliderText"></span>
+
+                    <label class=" form-control-label">Upload slider image</label>
+                    <input asp-for="NewImage" class="form-control  mb-2">
+                    <span class="text-danger" asp-validation-for="NewImage"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">
+                    <i class="fa fa-dot-circle-o"></i> Submit
+                </button>
+                <a type="reset" asp-action="Index" class="btn btn-danger btn-sm">
+                    <i class="fa fa-ban"></i> Reset
+                </a>
+            </form>
+        </div>
+    </div>
+</div>
+

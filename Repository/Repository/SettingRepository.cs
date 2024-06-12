@@ -20,19 +20,18 @@ namespace Repository.Repository
         public async Task Create(Setting setting)
         {
             await _context.Settings.AddAsync(setting);
+            await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(int id)
+        public async Task Delete(Setting setting)
         {
-            var existData = await GetById(id);
-            _context.Settings.Remove(existData);
+            _context.Settings.Remove(setting);
             await _context.SaveChangesAsync();  
         }
 
         public async Task Edit(int id,Setting setting)
         {
             var existData = await GetById(id);
-            if (existData is null) return;
 
             existData.Key = setting.Key;
             existData.Value = setting.Value;
@@ -40,9 +39,9 @@ namespace Repository.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task<List<Setting>> GetAll()
+        public async Task<Dictionary<int,Dictionary<string, string>>> GetAll()
         {
-            return await _context.Settings.ToListAsync();
+            return await _context.Settings.ToDictionaryAsync(m => m.Id, m => new Dictionary<string, string> { {"Key",m.Key },{"Value",m.Value }});
         }
 
         public async Task<Setting> GetById(int id)
