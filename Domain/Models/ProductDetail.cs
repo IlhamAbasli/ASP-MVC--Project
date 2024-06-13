@@ -9,7 +9,7 @@ namespace Domain.Models
 {
     public class ProductDetail : BaseEntity
     {
-        public string Weight { get; set; } = "1 kg";
+        public decimal Weight { get; set; } = 1;
         public string OriginCountry { get; set; }
         public int QualityId { get; set; }
         public Quality Qualities { get; set; }

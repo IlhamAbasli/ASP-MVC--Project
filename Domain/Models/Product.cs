@@ -11,9 +11,10 @@ namespace Domain.Models
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public int RatingCount { get; set; }
+        public decimal Price { get; set; }
+        public int RatingCount { get; set; } = 0;
         public int CategoryId { get; set; }
-        public int Count { get; set; }
+        public int Count { get; set; } = 0;
         public int SellingCount { get; set; } = 0;
         public Category Category { get; set; }        
         public ICollection<ProductImages> ProductImages { get; set; }

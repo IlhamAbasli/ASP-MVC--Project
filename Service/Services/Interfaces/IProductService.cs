@@ -14,5 +14,8 @@ namespace Service.Services.Interfaces
         Task Create(Product category);
         Task Edit(int id, Product category);
         Task Delete(Product product);
+        Task<List<Quality>> GetQualities();
+        Task DeleteImage(ProductImages image);
+        Task ChangeMainImage(Product product, int id);  
     }
 }

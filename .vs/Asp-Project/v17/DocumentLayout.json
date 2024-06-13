@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\repository\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\repository\\repository\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAMgAAAAAAAAAAAAAwCYBAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:15:42.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Repository\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repository\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Repository\\Repository\\ProductRepository.cs",
+              "RelativeToolTip": "Repository\\Repository\\ProductRepository.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAIwCkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:16:52.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Repository\\Repository\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repository\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Repository\\Repository\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "Repository\\Repository\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:16:45.945Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

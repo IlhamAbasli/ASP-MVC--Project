@@ -1,0 +1,50 @@
+﻿@model ProductCreateVM
+
+<div class="container">
+    <div class="card">
+        <div class="card-header text-success">
+            <strong>Create new product</strong>
+        </div>
+        <div class="card-body card-block">
+            <form asp-action="Create" method="post" class="" enctype="multipart/form-data">
+                <div class="form-group">
+                    <span class="text-danger d-block" asp-validation-for="Name"></span>
+                    <input asp-for="Name" class="form-control mb-4" placeholder="Product name...">
+
+
+                    <span class="text-danger d-block" asp-validation-for="Description"></span>
+                    <input asp-for="Description" class="form-control mb-4" placeholder="Product description...">
+
+
+                    <span class="text-danger d-block" asp-validation-for="Price"></span>
+                    <input asp-for="Price" class="form-control mb-4" type="number" min="0" step="any" placeholder="Product price...">
+
+                    <span class="text-danger d-block" asp-validation-for="OriginCountry"></span>
+                    <input asp-for="OriginCountry" class="form-control mb-4" placeholder="Product country...">
+
+                    <span class="text-danger d-block" asp-validation-for="ProductCount"></span>
+                    <input asp-for="ProductCount" class="form-control mb-4" type="number" min="0" step="1" placeholder="Product count...">
+
+                    <label>Product Quality</label>
+                    <select class="form-control mb-3" asp-for="QualityId" asp-items="@ViewBag.qualities">
+                    </select>
+
+                    <label>Product Category</label>
+                    <select class="form-control mb-3" asp-for="CategoryId" asp-items="@ViewBag.categories">
+                    </select>
+
+                    <label>Product Images</label>
+                    <span class="text-danger d-block" asp-validation-for="Images"></span>
+                    <input asp-for="Images" class="form-control mb-2">
+
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">
+                    <i class="fa fa-dot-circle-o"></i> Submit
+                </button>
+                <a type="reset" asp-action="Index" class="btn btn-danger btn-sm">
+                    <i class="fa fa-ban"></i> Reset
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

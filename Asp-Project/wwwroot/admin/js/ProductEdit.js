@@ -2,8 +2,10 @@
     $(document).on("click", ".remove-image", function (e) {
         e.preventDefault();
         let id = parseInt($(this).parent().parent().parent().parent().attr("data-id"))
+        let productId = parseInt($(this).parent().parent().parent().parent().attr("data-product-id"))
         $.ajax({
-            url: `../DeleteImage?id=${id}`,
+            url: `../DeleteImage`,
+            data: {id,productId},
             type: 'POST',
             success: function (response) {
                 $(`[data-id = ${id}]`).remove();
@@ -39,7 +41,8 @@
 
         console.log(id, productId);
         $.ajax({
-            url: `../ChangeMainImage?id=${id}&productId=${productId}`,
+            url: `../ChangeMainImage`,
+            data: { id, productId },
             type: 'POST',
             success: function (response) {
                 $(".main-image").removeClass("main-image");

@@ -39,13 +39,15 @@ namespace Repository.Repository
             existProduct.Details = category.Details;
             existProduct.CategoryId = category.CategoryId;
             existProduct.RatingCount = category.RatingCount;
+            await _context.SaveChangesAsync();
         }
 
         public async Task<List<Product>> GetAll()
         {
-            return await _context.Products.Include(m=>m.Details)
-                                          .Include(m=>m.Category)
+            return await _context.Products.Include(m=>m.Category)
                                           .Include(m=>m.ProductImages)
+                                          .Include(m => m.Details)
+                                          .ThenInclude(m => m.Qualities)
                                           .ToListAsync();
         }
 
@@ -53,8 +55,33 @@ namespace Repository.Repository
         {
             return await _context.Products.Where(m=>m.Id == id)
                                           .Include(m => m.Details)
+                                          .ThenInclude(m=>m.Qualities)
                                           .Include(m => m.Category)
                                           .Include(m => m.ProductImages).FirstOrDefaultAsync();
+        }
+
+        public async Task<List<Quality>> GetQualities()
+        {
+            return await _context.Qualities.ToListAsync();
+        }
+
+        public async Task DeleteImage(ProductImages image)
+        {
+            _context.ProductImages.Remove(image);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task ChangeMainImage(Product product,int imageId)
+        {
+            var images = product.ProductImages.Where(m => m.IsMain == true);
+            foreach(var image in images)
+            {
+                image.IsMain = false;
+            }
+
+            product.ProductImages.FirstOrDefault(m => m.Id == imageId).IsMain = true;
+            await _context.SaveChangesAsync();
+
         }
     }
 }

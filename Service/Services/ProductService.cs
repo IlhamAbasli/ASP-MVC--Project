@@ -16,6 +16,12 @@ namespace Service.Services
         {
             _productRepository = productRepository;
         }
+
+        public async Task ChangeMainImage(Product product, int id)
+        {
+            await _productRepository.ChangeMainImage(product, id);
+        }
+
         public async Task Create(Product category)
         {
             await _productRepository.Create(category);
@@ -24,6 +30,11 @@ namespace Service.Services
         public async Task Delete(Product product)
         {
             await _productRepository.Delete(product);
+        }
+
+        public async Task DeleteImage(ProductImages image)
+        {
+            await _productRepository.DeleteImage(image);
         }
 
         public async Task Edit(int id, Product category)
@@ -39,6 +50,11 @@ namespace Service.Services
         public async Task<Product> GetById(int id)
         {
             return await _productRepository.GetById(id);
+        }
+
+        public async Task<List<Quality>> GetQualities()
+        {
+            return await _productRepository.GetQualities();
         }
     }
 }
