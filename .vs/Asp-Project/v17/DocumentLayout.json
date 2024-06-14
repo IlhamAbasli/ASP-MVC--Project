@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\areas\\admin\\views\\banner\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\areas\\admin\\views\\banner\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\repository\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\areas\\admin\\views\\banner\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\areas\\admin\\views\\banner\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\repository\\repository\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\areas\\admin\\controllers\\bannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\areas\\admin\\controllers\\bannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\viewmodels\\banners\\admin\\bannervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\viewmodels\\banners\\admin\\bannervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\areas\\admin\\views\\slider\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\areas\\admin\\views\\slider\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\repository\\repository\\interfaces\\ibannerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E7C2377-93C8-4117-B9D4-BAABFD1DC356}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\interfaces\\ibannerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Asp-Project\\Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "RelativeToolTip": "Asp-Project\\Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T18:02:43.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAMgAAAAAAAAAAAAAwCYBAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T21:15:42.193Z",
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Views\\Banner\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Asp-Project\\Areas\\Admin\\Views\\Banner\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Views\\Banner\\Detail.cshtml",
+              "RelativeToolTip": "Asp-Project\\Areas\\Admin\\Views\\Banner\\Detail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T18:01:32.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Repository\\Repository\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repository\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Repository\\Repository\\ProductRepository.cs",
-              "RelativeToolTip": "Repository\\Repository\\ProductRepository.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAIwCkAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T21:16:52.008Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Views\\Banner\\Create.cshtml",
+              "RelativeDocumentMoniker": "Asp-Project\\Areas\\Admin\\Views\\Banner\\Create.cshtml",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Views\\Banner\\Create.cshtml",
+              "RelativeToolTip": "Asp-Project\\Areas\\Admin\\Views\\Banner\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T17:49:48.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Repository\\Repository\\Interfaces\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repository\\Interfaces\\IProductRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Repository\\Repository\\Interfaces\\IProductRepository.cs",
-              "RelativeToolTip": "Repository\\Repository\\Interfaces\\IProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "BannerController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Controllers\\BannerController.cs",
+              "RelativeDocumentMoniker": "Asp-Project\\Areas\\Admin\\Controllers\\BannerController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Controllers\\BannerController.cs",
+              "RelativeToolTip": "Asp-Project\\Areas\\Admin\\Controllers\\BannerController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA9wCkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T21:16:45.945Z",
+              "WhenOpened": "2024-06-14T16:58:48.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BannerVM.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\ViewModels\\Banners\\Admin\\BannerVM.cs",
+              "RelativeDocumentMoniker": "Asp-Project\\ViewModels\\Banners\\Admin\\BannerVM.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\ViewModels\\Banners\\Admin\\BannerVM.cs",
+              "RelativeToolTip": "Asp-Project\\ViewModels\\Banners\\Admin\\BannerVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T17:45:59.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IBannerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Repository\\Repository\\Interfaces\\IBannerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repository\\Interfaces\\IBannerRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Repository\\Repository\\Interfaces\\IBannerRepository.cs",
+              "RelativeToolTip": "Repository\\Repository\\Interfaces\\IBannerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T16:58:56.784Z",
               "EditorCaption": ""
             }
           ]

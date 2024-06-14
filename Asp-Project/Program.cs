@@ -38,6 +38,10 @@ builder.Services.AddScoped<ISliderInfoService, SliderInfoService>();
 builder.Services.AddScoped<ISliderInfoRepository, SliderInfoRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IFeatureService, FeatureService>();
+builder.Services.AddScoped<IFeatureRepository, FeatureRepository>();
+builder.Services.AddScoped<IBannerService, BannerService>();
+builder.Services.AddScoped<IBannerRepository, BannerRepository>();
 
 var app = builder.Build();
 
