@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hjVi/TMK2INwVBFkk+MnWcMy5i+JyqZt+iwIw1m2yus=",
+  "Hash": "cAROfKlPlqV6Jyt5hfR7mPtcJUHqDZiqUzQGqCcO74U=",
   "Source": "Asp-Project",
   "BasePath": "_content/Asp-Project",
   "Mode": "Default",
@@ -6019,6 +6019,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\81797824-1a1d-4418-ba2d-cacaf299d72f-single-item.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\96df8f8c-47b0-4482-81fe-da8b30898e51-best-product-6.jpg",
+      "SourceId": "Asp-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\",
+      "BasePath": "_content/Asp-Project",
+      "RelativePath": "img/96df8f8c-47b0-4482-81fe-da8b30898e51-best-product-6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\96df8f8c-47b0-4482-81fe-da8b30898e51-best-product-6.jpg"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\avatar.jpg",

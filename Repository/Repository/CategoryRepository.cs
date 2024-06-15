@@ -29,10 +29,9 @@ namespace Repository.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(int id)
+        public async Task Delete(Category category)
         {
-            var existCategory = await GetById(id);
-            _context.Categories.Remove(existCategory);
+            _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
         }
 

@@ -13,7 +13,7 @@ namespace Repository.Repository.Interfaces
         Task<Category> GetById(int id);
         Task Create (Category category);
         Task Edit (int id,Category category);
-        Task Delete(int id);
+        Task Delete(Category category);
         Task<bool> CategoryIsExist(string name);
     }
 }

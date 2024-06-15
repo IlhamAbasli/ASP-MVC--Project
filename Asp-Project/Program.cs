@@ -42,6 +42,8 @@ builder.Services.AddScoped<IFeatureService, FeatureService>();
 builder.Services.AddScoped<IFeatureRepository, FeatureRepository>();
 builder.Services.AddScoped<IBannerService, BannerService>();
 builder.Services.AddScoped<IBannerRepository, BannerRepository>();
+builder.Services.AddScoped<IAdService, AdService>();
+builder.Services.AddScoped<IAdvertisementRepository, AdvertisementRepository>();
 
 var app = builder.Build();
 

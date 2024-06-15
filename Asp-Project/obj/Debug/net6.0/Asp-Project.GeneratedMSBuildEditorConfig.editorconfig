@@ -18,12 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/FX706HE/Desktop/ASP-MVC--Project/Asp-Project/Areas/Admin/Views/Advertisement/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2ZXJ0aXNlbWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FX706HE/Desktop/ASP-MVC--Project/Asp-Project/Areas/Admin/Views/Advertisement/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2ZXJ0aXNlbWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FX706HE/Desktop/ASP-MVC--Project/Asp-Project/Areas/Admin/Views/Advertisement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2ZXJ0aXNlbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/FX706HE/Desktop/ASP-MVC--Project/Asp-Project/Areas/Admin/Views/Banner/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFubmVyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/FX706HE/Desktop/ASP-MVC--Project/Asp-Project/Areas/Admin/Views/Banner/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFubmVyXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FX706HE/Desktop/ASP-MVC--Project/Asp-Project/Areas/Admin/Views/Banner/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFubmVyXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/FX706HE/Desktop/ASP-MVC--Project/Asp-Project/Areas/Admin/Views/Banner/Index.cshtml]

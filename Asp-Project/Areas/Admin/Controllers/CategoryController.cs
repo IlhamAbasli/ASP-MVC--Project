@@ -64,7 +64,7 @@ namespace Asp_Project.Areas.Admin.Controllers
 
             if(category is null) return NotFound();
 
-            await _categoryService.Delete((int)id);  
+            await _categoryService.Delete(category);  
             return RedirectToAction(nameof(Index));
         }
 

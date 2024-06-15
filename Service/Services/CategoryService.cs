@@ -27,9 +27,9 @@ namespace Service.Services
             await _categoryRepository.Create(category);
         }
 
-        public async Task Delete(int id)
+        public async Task Delete(Category category)
         {
-           await _categoryRepository.Delete(id);
+           await _categoryRepository.Delete(category);
         }
 
         public async Task Edit(int id, Category category)
