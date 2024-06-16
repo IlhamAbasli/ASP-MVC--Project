@@ -47,7 +47,12 @@ namespace Asp_Project.Areas.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProductCreateVM request)
-        {
+        {            
+            var categories = await _categoryService.GetAll();
+            var qualities = await _productService.GetQualities();
+            ViewBag.categories = new SelectList(categories, "Id", "Name");
+            ViewBag.qualities = new SelectList(qualities, "Id", "Name");
+
             if (!ModelState.IsValid)
             {
                 return View();
@@ -205,6 +210,10 @@ namespace Asp_Project.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id,ProductEditVM request)
         {
+            var categories = await _categoryService.GetAll();
+            var qualities = await _productService.GetQualities();
+            ViewBag.categories = new SelectList(categories, "Id", "Name");
+            ViewBag.qualities = new SelectList(qualities, "Id", "Name");
             if (!ModelState.IsValid)
             {
                 return View();

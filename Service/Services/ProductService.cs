@@ -47,9 +47,26 @@ namespace Service.Services
             return await _productRepository.GetAll();
         }
 
+        public async Task<List<Product>> GetAllPaginatedDatas(int page, int take = 9)
+        {
+            return await _productRepository.GetAllPaginatedDatas(page, take);
+        }
+
         public async Task<Product> GetById(int id)
         {
             return await _productRepository.GetById(id);
+        }
+
+        public async Task<int> GetCount()
+        {
+            return await _productRepository.GetCount();
+        }
+
+        public async Task<int> GetPageCount(int take)
+        {
+            int count = await GetCount();
+
+            return (int)Math.Ceiling((decimal)count / take);
         }
 
         public async Task<List<Quality>> GetQualities()

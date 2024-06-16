@@ -17,5 +17,7 @@ namespace Repository.Repository.Interfaces
         Task<List<Quality>> GetQualities();
         Task DeleteImage(ProductImages image);
         Task ChangeMainImage(Product product, int id);
+        Task<List<Product>> GetAllPaginatedDatas(int page,int take = 9);
+        Task<int> GetCount();
     }
 }

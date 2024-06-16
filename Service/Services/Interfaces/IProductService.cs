@@ -16,6 +16,9 @@ namespace Service.Services.Interfaces
         Task Delete(Product product);
         Task<List<Quality>> GetQualities();
         Task DeleteImage(ProductImages image);
-        Task ChangeMainImage(Product product, int id);  
+        Task ChangeMainImage(Product product, int id);
+        Task<List<Product>> GetAllPaginatedDatas(int page, int take = 9);
+        Task<int> GetCount();
+        Task<int> GetPageCount(int take);
     }
 }

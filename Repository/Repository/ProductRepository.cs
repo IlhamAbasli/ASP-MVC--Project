@@ -83,5 +83,19 @@ namespace Repository.Repository
             await _context.SaveChangesAsync();
 
         }
+
+        public async Task<List<Product>> GetAllPaginatedDatas(int page, int take = 9)
+        {
+            return await _context.Products.Include(m => m.ProductImages)
+                                          .Include(m => m.Category)
+                                          .Skip((page - 1) * take)
+                                          .Take(take)
+                                          .ToListAsync();
+        }
+
+        public async Task<int> GetCount()
+        {
+            return await _context.Products.CountAsync();
+        }
     }
 }

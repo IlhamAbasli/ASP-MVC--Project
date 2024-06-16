@@ -55,7 +55,7 @@ namespace Repository.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<int>("BasketId")
+                    b.Property<int?>("BasketId")
                         .HasColumnType("int");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -108,7 +108,8 @@ namespace Repository.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("BasketId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[BasketId] IS NOT NULL");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -601,9 +602,7 @@ namespace Repository.Migrations
                 {
                     b.HasOne("Domain.Models.Basket", "Basket")
                         .WithOne("User")
-                        .HasForeignKey("Domain.Models.AppUser", "BasketId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Domain.Models.AppUser", "BasketId");
 
                     b.Navigation("Basket");
                 });

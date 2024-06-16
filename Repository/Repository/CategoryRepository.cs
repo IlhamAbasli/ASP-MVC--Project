@@ -45,7 +45,7 @@ namespace Repository.Repository
 
         public async Task<List<Category>> GetAll()
         {
-            return await _context.Categories.ToListAsync();
+            return await _context.Categories.Include(m => m.Products).ToListAsync();
         }
 
         public async Task<Category> GetById(int id)
