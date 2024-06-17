@@ -17,25 +17,50 @@ namespace Asp_Project.Controllers
             _categoryService = categoryService;
         }
         [HttpGet]   
-        public async Task<IActionResult> Index(int page = 1)
+        public async Task<IActionResult> Index(string searchText,int page = 1)
         {
-            var paginatedDatas = await _productService.GetAllPaginatedDatas(page);
-            int pageCount = await _productService.GetPageCount(9);
-
-            Paginate<Product> pagination = new(paginatedDatas, pageCount,page);
-
-            var categories = await _categoryService.GetAll();
-            var products = await _productService.GetAll();
-
-            ProductPageVM model = new()
+            if(searchText is not null)
             {
-                Categories = categories,
-                Products = products,
-                Pagination = pagination
-            };
+                var paginatedSearchedDatas = await _productService.GetAllSearchedPaginatedDatas(page, searchText);
+                int searchedProductCount = await _productService.GetSearchedCount(searchText);
+                int searchedPageCount = _productService.GetPageCount(searchedProductCount, 9);
+
+                Paginate<Product> searchPagination = new(paginatedSearchedDatas, searchedPageCount, page);
+
+                var searchCategories = await _categoryService.GetAll();
+                var products = await _productService.GetAll();
+
+                ProductPageVM searchModel = new()
+                {
+                    Categories = searchCategories,
+                    Products = products,
+                    Pagination = searchPagination
+                };
 
 
-            return View(model);
+                return View(searchModel);
+            }
+            else
+            {
+                var paginatedDatas = await _productService.GetAllPaginatedDatas(page);
+                int productCount = await _productService.GetCount();
+                int pageCount = _productService.GetPageCount(productCount, 9);
+
+                Paginate<Product> pagination = new(paginatedDatas, pageCount, page);
+
+                var categories = await _categoryService.GetAll();
+                var products = await _productService.GetAll();
+
+                ProductPageVM model = new()
+                {
+                    Categories = categories,
+                    Products = products,
+                    Pagination = pagination
+                };
+
+
+                return View(model);
+            }
         }
     }
 }

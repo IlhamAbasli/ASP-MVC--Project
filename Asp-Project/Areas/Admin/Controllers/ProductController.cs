@@ -163,6 +163,7 @@ namespace Asp_Project.Areas.Admin.Controllers
                 ExistProductImages = product.ProductImages.Select(m => new ProductEditImageVM { Id = m.Id, Name = m.Image, IsMain = m.IsMain, ProductId = m.ProductId }).ToList(),
                 CategoryId = product.CategoryId,
                 QualityId = product.Details.FirstOrDefault().QualityId,
+                RatingCount = product.RatingCount
             };
 
             return View(model);
@@ -278,7 +279,8 @@ namespace Asp_Project.Areas.Admin.Controllers
                 CategoryId = request.CategoryId,
                 Details = details,
                 Count = request.ProductCount,
-                ProductImages = images
+                ProductImages = images,
+                RatingCount = request.RatingCount,  
             };
 
             await _productService.Edit((int) id,product);

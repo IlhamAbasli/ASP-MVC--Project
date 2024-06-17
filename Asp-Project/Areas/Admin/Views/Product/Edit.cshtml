@@ -50,6 +50,10 @@
                     <select class="form-control mb-3" asp-for="CategoryId" asp-items="@ViewBag.categories">
                     </select>
 
+                    <label>Rating</label>
+                    <input asp-for="RatingCount" class="form-control mb-4" type="number" min="0" max="5" step="any" placeholder="Rating...">
+                    <span class="text-danger" asp-validation-for="RatingCount"></span>
+
                     <label>Product Images</label>
                     <div class="product-images">
                         @foreach (var item in Model.ExistProductImages)

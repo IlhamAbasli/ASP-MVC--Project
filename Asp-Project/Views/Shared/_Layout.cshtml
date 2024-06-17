@@ -20,7 +20,7 @@
     <!-- Libraries Stylesheet -->
     <link href="~/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="~/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
+    @RenderSection("css",false)
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="~/css/bootstrap.min.css" rel="stylesheet">
@@ -47,10 +47,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body d-flex align-items-center">
-                    <div class="input-group w-75 mx-auto d-flex">
-                        <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                    <form method="get" asp-controller="Shop" asp-action="Index" enctype="multipart/form-data" class="input-group w-75 mx-auto d-flex">
+                        <input class="form-control p-3" name="searchText" placeholder="Search">
+                        <button type="submit" class="search-btn btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 0%;">Search</button>
+                    </form>
+@*                     <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="Search..." aria-describedby="search-icon-1">
                         <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                    </div>
+                    </div> *@
                 </div>
             </div>
         </div>
@@ -73,6 +77,8 @@
     <script src="~/lib/waypoints/waypoints.min.js"></script>
     <script src="~/lib/lightbox/js/lightbox.min.js"></script>
     <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+    @RenderSection("js", false)
+
 
     <!-- Template Javascript -->
     <script src="~/js/main.js"></script>

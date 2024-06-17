@@ -97,5 +97,20 @@ namespace Repository.Repository
         {
             return await _context.Products.CountAsync();
         }
+
+        public async Task<List<Product>> GetAllSearchedPaginatedDatas(int page, string searchText, int take = 9)
+        {
+            return await _context.Products.Where(m=> m.Name.Trim().ToLower().Contains(searchText.Trim().ToLower()))
+                                          .Include(m => m.ProductImages)
+                                          .Include(m => m.Category)
+                                          .Skip((page - 1) * take)
+                                          .Take(take)
+                                          .ToListAsync();
+        }
+
+        public async Task<int> GetSearchedCount(string searchText)
+        {
+            return await _context.Products.Where(m => m.Name.Trim().ToLower().Contains(searchText.Trim().ToLower())).CountAsync();
+        }
     }
 }

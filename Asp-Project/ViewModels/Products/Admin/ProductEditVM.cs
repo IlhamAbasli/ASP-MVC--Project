@@ -1,4 +1,5 @@
 ﻿using Domain.Models;
+using System.Configuration;
 
 namespace Asp_Project.ViewModels.Products.Admin
 {
@@ -11,6 +12,8 @@ namespace Asp_Project.ViewModels.Products.Admin
         public string ProductCountry { get; set; }
         public int CategoryId { get; set; }
         public int QualityId { get; set; }
+        [IntegerValidator(MinValue = 0,MaxValue = 5)]
+        public int RatingCount { get; set; }
         public List<ProductEditImageVM> ExistProductImages {  get; set; }
         public List<IFormFile> NewProductImages { get; set; }
         public List<ProductDetail> Details { get; set; }

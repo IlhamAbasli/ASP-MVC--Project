@@ -52,6 +52,11 @@ namespace Service.Services
             return await _productRepository.GetAllPaginatedDatas(page, take);
         }
 
+        public async Task<List<Product>> GetAllSearchedPaginatedDatas(int page, string searchText, int take = 9)
+        {
+            return await _productRepository.GetAllSearchedPaginatedDatas(page, searchText, take);   
+        }
+
         public async Task<Product> GetById(int id)
         {
             return await _productRepository.GetById(id);
@@ -62,16 +67,19 @@ namespace Service.Services
             return await _productRepository.GetCount();
         }
 
-        public async Task<int> GetPageCount(int take)
+        public int GetPageCount(int count,int take)
         {
-            int count = await GetCount();
-
             return (int)Math.Ceiling((decimal)count / take);
         }
 
         public async Task<List<Quality>> GetQualities()
         {
             return await _productRepository.GetQualities();
+        }
+
+        public async Task<int> GetSearchedCount(string searchText)
+        {
+            return await _productRepository.GetSearchedCount(searchText);
         }
     }
 }
