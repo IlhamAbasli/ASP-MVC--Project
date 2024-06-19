@@ -14,6 +14,7 @@ namespace Domain.Models
         public decimal ProductPrice { get; set; }
         public int ProductCount { get; set; }   
         public decimal ProductTotalPrice { get; set; }
+        public string UserId { get; set; }
         public AppUser User { get; set; }
     }
 }

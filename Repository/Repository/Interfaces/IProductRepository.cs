@@ -21,5 +21,8 @@ namespace Repository.Repository.Interfaces
         Task<List<Product>> GetAllSearchedPaginatedDatas(int page, string searchText, int take = 9);
         Task<int> GetSearchedCount(string searchText);
         Task<int> GetCount();
+        Task<List<Product>> GetBestSellerProducts();
+
+        Task<List<Product>> GetVegetables();
     }
 }

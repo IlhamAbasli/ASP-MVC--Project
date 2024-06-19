@@ -7,32 +7,52 @@
       "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\wwwroot\\js\\shop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\wwwroot\\js\\shop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\views\\basket\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\views\\basket\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\viewmodels\\products\\productdetailpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\viewmodels\\products\\productdetailpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\wwwroot\\js\\basket.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\wwwroot\\js\\basket.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|c:\\users\\fx706he\\desktop\\asp-mvc--project\\asp-project\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC71B5A-5804-42CA-B437-B9C8A0AA52E0}|Asp-Project\\Asp-Project.csproj|solutionrelative:asp-project\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,32 +62,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Asp-Project\\Views\\_ViewImports.cshtml",
               "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "Asp-Project\\Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-17T15:53:45.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Asp-Project\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Asp-Project\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T15:48:42.569Z",
+              "WhenOpened": "2024-06-19T20:13:47.982Z",
               "EditorCaption": ""
             },
             {
@@ -78,74 +85,152 @@
               "RelativeDocumentMoniker": "Asp-Project\\Views\\Product\\Index.cshtml",
               "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\Product\\Index.cshtml",
               "RelativeToolTip": "Asp-Project\\Views\\Product\\Index.cshtml",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAEcAAAAkAAAA",
+              "ViewState": "AQIAAL8AAAAAAAAAAAAAANUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-17T15:30:28.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Asp-Project\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Asp-Project\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADMAAABzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-17T14:45:10.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ShopController.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\ShopController.cs",
-              "RelativeDocumentMoniker": "Asp-Project\\Controllers\\ShopController.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\ShopController.cs",
-              "RelativeToolTip": "Asp-Project\\Controllers\\ShopController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABMAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T14:30:49.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Asp-Project\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Asp-Project\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T14:33:28.364Z",
+              "WhenOpened": "2024-06-19T20:13:38.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ProductDetailPageVM.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\ViewModels\\Products\\ProductDetailPageVM.cs",
+              "RelativeDocumentMoniker": "Asp-Project\\ViewModels\\Products\\ProductDetailPageVM.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\ViewModels\\Products\\ProductDetailPageVM.cs",
+              "RelativeToolTip": "Asp-Project\\ViewModels\\Products\\ProductDetailPageVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T20:09:46.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Asp-Project\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Asp-Project\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T20:09:06.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Asp-Project\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Asp-Project\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAqwGwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T19:59:09.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "Asp-Project\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "Asp-Project\\Controllers\\ShopController.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAwwGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T19:43:32.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\Shop\\Index.cshtml",
               "RelativeDocumentMoniker": "Asp-Project\\Views\\Shop\\Index.cshtml",
               "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\Shop\\Index.cshtml",
               "RelativeToolTip": "Asp-Project\\Views\\Shop\\Index.cshtml",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAmwJEAAABTAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-17T14:31:35.047Z",
+              "WhenOpened": "2024-06-19T19:43:36.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Asp-Project\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAIwIgAAABJAAAA",
+              "DocumentIndex": 2,
+              "Title": "shop.js",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\shop.js",
+              "RelativeDocumentMoniker": "Asp-Project\\wwwroot\\js\\shop.js",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\shop.js",
+              "RelativeToolTip": "Asp-Project\\wwwroot\\js\\shop.js",
+              "ViewState": "AQIAAAEAAAAAAAAAAAA1wAkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-19T19:43:06.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "basket.js",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\basket.js",
+              "RelativeDocumentMoniker": "Asp-Project\\wwwroot\\js\\basket.js",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\basket.js",
+              "RelativeToolTip": "Asp-Project\\wwwroot\\js\\basket.js",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-19T19:07:35.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\Basket\\Index.cshtml",
+              "RelativeDocumentMoniker": "Asp-Project\\Views\\Basket\\Index.cshtml",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\Basket\\Index.cshtml",
+              "RelativeToolTip": "Asp-Project\\Views\\Basket\\Index.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAACMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T19:08:03.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "Asp-Project\\Controllers\\BasketController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "Asp-Project\\Controllers\\BasketController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAIwFUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T21:23:48.907Z",
+              "WhenOpened": "2024-06-19T19:07:51.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Home.js",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\Home.js",
+              "RelativeDocumentMoniker": "Asp-Project\\wwwroot\\js\\Home.js",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\Home.js",
+              "RelativeToolTip": "Asp-Project\\wwwroot\\js\\Home.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-19T19:03:34.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Asp-Project\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Asp-Project\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAAAKEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T19:01:20.209Z",
               "EditorCaption": ""
             }
           ]

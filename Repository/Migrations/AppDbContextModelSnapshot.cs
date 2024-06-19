@@ -55,9 +55,6 @@ namespace Repository.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<int?>("BasketId")
-                        .HasColumnType("int");
-
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -106,10 +103,6 @@ namespace Repository.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("BasketId")
-                        .IsUnique()
-                        .HasFilter("[BasketId] IS NOT NULL");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -173,7 +166,12 @@ namespace Repository.Migrations
                     b.Property<bool>("SoftDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Baskets");
                 });
@@ -598,13 +596,13 @@ namespace Repository.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Domain.Models.AppUser", b =>
+            modelBuilder.Entity("Domain.Models.Basket", b =>
                 {
-                    b.HasOne("Domain.Models.Basket", "Basket")
-                        .WithOne("User")
-                        .HasForeignKey("Domain.Models.AppUser", "BasketId");
+                    b.HasOne("Domain.Models.AppUser", "User")
+                        .WithMany("Baskets")
+                        .HasForeignKey("UserId");
 
-                    b.Navigation("Basket");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Domain.Models.Comment", b =>
@@ -718,12 +716,9 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("Domain.Models.AppUser", b =>
                 {
-                    b.Navigation("Comments");
-                });
+                    b.Navigation("Baskets");
 
-            modelBuilder.Entity("Domain.Models.Basket", b =>
-                {
-                    b.Navigation("User");
+                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("Domain.Models.Category", b =>

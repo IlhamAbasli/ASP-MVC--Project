@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IY3uPbVVMxhw2zy+I8XoRdZmD2dNtxkR7HqTUCRIjs8=",
+  "Hash": "o7tcTMDhadNkFeUiklLYTVtM3lbKy522AiMrjyuJArg=",
   "Source": "Asp-Project",
   "BasePath": "_content/Asp-Project",
   "Mode": "Default",
@@ -6135,6 +6135,25 @@
       "OriginalItemSpec": "wwwroot\\img\\5dfd3ced-0dd8-41d5-baf9-619f413a52ee-best-product-2.jpg"
     },
     {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\6542fb7a-7e19-4e93-a831-f5b435cfc71c-baner-1.png",
+      "SourceId": "Asp-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\",
+      "BasePath": "_content/Asp-Project",
+      "RelativePath": "img/6542fb7a-7e19-4e93-a831-f5b435cfc71c-baner-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\6542fb7a-7e19-4e93-a831-f5b435cfc71c-baner-1.png"
+    },
+    {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\81797824-1a1d-4418-ba2d-cacaf299d72f-single-item.jpg",
       "SourceId": "Asp-Project",
       "SourceType": "Discovered",
@@ -6171,25 +6190,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\90a0da76-9522-40ff-9987-5f690ccbf721-vegetable-item-5.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\96df8f8c-47b0-4482-81fe-da8b30898e51-best-product-6.jpg",
-      "SourceId": "Asp-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\",
-      "BasePath": "_content/Asp-Project",
-      "RelativePath": "img/96df8f8c-47b0-4482-81fe-da8b30898e51-best-product-6.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\96df8f8c-47b0-4482-81fe-da8b30898e51-best-product-6.jpg"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\aa52e540-6e34-470f-afa9-37d8c1180870-vegetable-item-6.jpg",
@@ -6952,6 +6952,25 @@
       "OriginalItemSpec": "wwwroot\\img\\vegetable-item-6.jpg"
     },
     {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\basket.js",
+      "SourceId": "Asp-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\",
+      "BasePath": "_content/Asp-Project",
+      "RelativePath": "js/basket.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\basket.js"
+    },
+    {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\main.js",
       "SourceId": "Asp-Project",
       "SourceType": "Discovered",
@@ -6969,6 +6988,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\shop.js",
+      "SourceId": "Asp-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\",
+      "BasePath": "_content/Asp-Project",
+      "RelativePath": "js/shop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\shop.js"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\lib\\easing\\easing.js",

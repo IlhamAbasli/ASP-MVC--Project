@@ -1285,16 +1285,16 @@
       "PackagePath": "staticwebassets\\img\\5dfd3ced-0dd8-41d5-baf9-619f413a52ee-best-product-2.jpg"
     },
     {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\6542fb7a-7e19-4e93-a831-f5b435cfc71c-baner-1.png",
+      "PackagePath": "staticwebassets\\img\\6542fb7a-7e19-4e93-a831-f5b435cfc71c-baner-1.png"
+    },
+    {
       "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\81797824-1a1d-4418-ba2d-cacaf299d72f-single-item.jpg",
       "PackagePath": "staticwebassets\\img\\81797824-1a1d-4418-ba2d-cacaf299d72f-single-item.jpg"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\90a0da76-9522-40ff-9987-5f690ccbf721-vegetable-item-5.jpg",
       "PackagePath": "staticwebassets\\img\\90a0da76-9522-40ff-9987-5f690ccbf721-vegetable-item-5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\96df8f8c-47b0-4482-81fe-da8b30898e51-best-product-6.jpg",
-      "PackagePath": "staticwebassets\\img\\96df8f8c-47b0-4482-81fe-da8b30898e51-best-product-6.jpg"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\img\\aa52e540-6e34-470f-afa9-37d8c1180870-vegetable-item-6.jpg",
@@ -1457,8 +1457,16 @@
       "PackagePath": "staticwebassets\\img\\vegetable-item-6.jpg"
     },
     {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\basket.js",
+      "PackagePath": "staticwebassets\\js\\basket.js"
+    },
+    {
       "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\shop.js",
+      "PackagePath": "staticwebassets\\js\\shop.js"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\lib\\easing\\easing.js",

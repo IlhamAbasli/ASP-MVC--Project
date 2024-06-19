@@ -57,6 +57,11 @@ namespace Service.Services
             return await _productRepository.GetAllSearchedPaginatedDatas(page, searchText, take);   
         }
 
+        public async Task<List<Product>> GetBestSellerProducts()
+        {
+            return await _productRepository.GetBestSellerProducts();
+        }
+
         public async Task<Product> GetById(int id)
         {
             return await _productRepository.GetById(id);
@@ -80,6 +85,11 @@ namespace Service.Services
         public async Task<int> GetSearchedCount(string searchText)
         {
             return await _productRepository.GetSearchedCount(searchText);
+        }
+
+        public async Task<List<Product>> GetVegetables()
+        {
+            return await _productRepository.GetVegetables();
         }
     }
 }

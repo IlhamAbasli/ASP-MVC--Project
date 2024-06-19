@@ -8,5 +8,6 @@ namespace Repository.Repository.Interfaces
 {
     internal interface IAccountRepository
     {
+        Task AddBasketId(string id);
     }
 }

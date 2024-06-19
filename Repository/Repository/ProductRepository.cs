@@ -112,5 +112,14 @@ namespace Repository.Repository
         {
             return await _context.Products.Where(m => m.Name.Trim().ToLower().Contains(searchText.Trim().ToLower())).CountAsync();
         }
+
+        public async Task<List<Product>> GetBestSellerProducts()
+        {
+            return await _context.Products.Include(m=>m.Category).Include(m=>m.ProductImages).OrderByDescending(m=>m.SellingCount).ToListAsync();
+        }
+        public async Task<List<Product>> GetVegetables()
+        {
+            return await _context.Products.Where(m=>m.CategoryId == 3).Include(m=>m.Category).Include(m=>m.ProductImages).ToListAsync();
+        }
     }
 }

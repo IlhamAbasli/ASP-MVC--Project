@@ -2,6 +2,6 @@
 {
     public class HeaderVM
     {
-        public Dictionary<string,string> Settings;
+        public Dictionary<string, string> Settings { get; set; }
     }
 }

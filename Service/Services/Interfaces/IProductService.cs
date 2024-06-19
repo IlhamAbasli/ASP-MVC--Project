@@ -22,5 +22,7 @@ namespace Service.Services.Interfaces
         Task<int> GetSearchedCount(string searchText);
         Task<int> GetCount();
         int GetPageCount(int count,int take);
+        Task<List<Product>> GetBestSellerProducts();
+        Task<List<Product>> GetVegetables();
     }
 }
