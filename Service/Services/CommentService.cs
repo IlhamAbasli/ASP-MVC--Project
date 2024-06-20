@@ -21,9 +21,19 @@ namespace Service.Services
             await _commentRepository.Create(comment);
         }
 
+        public async Task Delete(Comment comment)
+        {
+            await _commentRepository.Delete(comment);
+        }
+
         public async Task<List<Comment>> GetAll()
         {
             return await _commentRepository.GetAll();
+        }
+
+        public async Task<Comment> GetById(int id)
+        {
+            return await _commentRepository.GetById(id);
         }
 
         public async Task<List<Comment>> GetCommentsByProduct(int id)

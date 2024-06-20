@@ -21,5 +21,20 @@ namespace Service.Services
         {
             await _complaintRepository.Create(suggest);
         }
+
+        public async Task Delete(ComplaintSuggest suggest)
+        {
+            await _complaintRepository.Delete(suggest);
+        }
+
+        public async Task<List<ComplaintSuggest>> GetAll()
+        {
+            return await _complaintRepository.GetAll();
+        }
+
+        public async Task<ComplaintSuggest> GetById(int id)
+        {
+            return await _complaintRepository.GetById(id);
+        }
     }
 }

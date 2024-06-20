@@ -25,7 +25,13 @@ builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<A
 
 builder.Services.Configure<IdentityOptions>(opt =>
 {
+    opt.Password.RequiredUniqueChars = 1;
+    opt.Password.RequireUppercase = true;
+    opt.Password.RequireLowercase = true;
+    opt.Password.RequireDigit = true;
+    opt.Password.RequireNonAlphanumeric = true;
 
+    opt.User.RequireUniqueEmail = true;
 });
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();

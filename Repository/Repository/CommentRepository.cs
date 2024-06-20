@@ -23,9 +23,20 @@ namespace Repository.Repository
             await _context.SaveChangesAsync();
         }
 
+        public async Task Delete(Comment comment)
+        {
+            _context.Comments.Remove(comment);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<List<Comment>> GetAll()
         {
             return await _context.Comments.Include(m=>m.User).Include(m=>m.Product).ToListAsync();
+        }
+
+        public async Task<Comment> GetById(int id)
+        {
+            return await _context.Comments.Where(m=>m.Id == id).Include(m=>m.User).Include(m=>m.Product).FirstOrDefaultAsync();
         }
 
         public async Task<List<Comment>> GetCommentByProduct(int id)

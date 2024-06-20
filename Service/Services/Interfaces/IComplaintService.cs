@@ -10,5 +10,8 @@ namespace Service.Services.Interfaces
     public interface IComplaintService
     {
         Task Create(ComplaintSuggest suggest);
+        Task<List<ComplaintSuggest>> GetAll();
+        Task Delete(ComplaintSuggest suggest);
+        Task<ComplaintSuggest> GetById(int id); 
     }
 }

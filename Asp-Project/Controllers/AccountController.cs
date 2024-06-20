@@ -47,7 +47,7 @@ namespace Asp_Project.Controllers
 
             var result = await _userManager.CreateAsync(newUser,request.Password);
             
-            if (result.Succeeded)
+            if (!result.Succeeded)
             {
                 foreach (var item in result.Errors)
                 {
@@ -56,7 +56,7 @@ namespace Asp_Project.Controllers
                 return View(request);
             }
 
-            await _userManager.AddToRoleAsync(newUser, nameof(Roles.Admin));
+            await _userManager.AddToRoleAsync(newUser, nameof(Roles.Member));
 
             return RedirectToAction("Index", "Home"); 
         }

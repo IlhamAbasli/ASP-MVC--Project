@@ -12,6 +12,8 @@ namespace Asp_Project.ViewModels
         public List<Product> BestSellers { get; set; }
         public List<Feature> Features { get; set; }
         public List<Advertisement> Ads { get; set; }
+        public List<Comment> Comments { get; set; }
         public Banner Banner { get; set; }
+
     }
 }

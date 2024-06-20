@@ -58,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/FX706HE/Desktop/ASP-MVC--Project/Asp-Project/Areas/Admin/Views/Comment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29tbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/FX706HE/Desktop/ASP-MVC--Project/Asp-Project/Areas/Admin/Views/ComplaintSuggest/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29tcGxhaW50U3VnZ2VzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

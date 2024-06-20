@@ -1,11 +1,13 @@
 ﻿using Asp_Project.ViewModels.Settings.Admin;
 using Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Services.Interfaces;
 
 namespace Asp_Project.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin, Admin")]
     public class SettingController : Controller
     {
         private readonly ISettingService _settingService;
@@ -22,6 +24,7 @@ namespace Asp_Project.Areas.Admin.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             return View();
@@ -41,6 +44,7 @@ namespace Asp_Project.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id is null) return BadRequest();

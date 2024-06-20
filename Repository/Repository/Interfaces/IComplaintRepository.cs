@@ -10,5 +10,8 @@ namespace Repository.Repository.Interfaces
     public interface IComplaintRepository
     {
         Task Create(ComplaintSuggest suggest);
+        Task<List<ComplaintSuggest>> GetAll();
+        Task Delete(ComplaintSuggest suggest);
+        Task<ComplaintSuggest> GetById(int id);
     }
 }

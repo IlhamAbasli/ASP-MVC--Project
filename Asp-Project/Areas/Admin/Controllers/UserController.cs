@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Asp_Project.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin, Admin")]
     public class UserController : Controller
     {
         public IActionResult Index()

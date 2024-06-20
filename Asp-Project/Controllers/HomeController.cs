@@ -21,6 +21,7 @@ namespace Asp_Project.Controllers
         private readonly IHttpContextAccessor _accessor;
         private readonly UserManager<AppUser> _userManager;
         private readonly IBasketService _basketService;
+        private readonly ICommentService _commentService;
 
         public HomeController(ICategoryService categoryService,
                               IProductService productService,
@@ -31,7 +32,8 @@ namespace Asp_Project.Controllers
                               IBannerService bannerService,
                               IHttpContextAccessor accessor,
                               IBasketService basketService,
-                              UserManager<AppUser> userManager)
+                              UserManager<AppUser> userManager,
+                              ICommentService commentService)
         {
             _categoryService = categoryService;
             _productService = productService;
@@ -42,7 +44,8 @@ namespace Asp_Project.Controllers
             _bannerService = bannerService;
             _accessor = accessor;
             _basketService = basketService;
-            _userManager = userManager; 
+            _userManager = userManager;
+            _commentService = commentService;
         }
         public async Task<IActionResult> Index()
         {
@@ -55,6 +58,7 @@ namespace Asp_Project.Controllers
             var banners = await _bannerService.GetAll();
             var vegetables = await _productService.GetVegetables();
             var bestSellers = await _productService.GetBestSellerProducts();
+            var comments = await _commentService.GetAll();  
 
             HomeVM model = new()
             {
@@ -67,6 +71,7 @@ namespace Asp_Project.Controllers
                 Vegetables = vegetables,
                 Banner = banners.FirstOrDefault(),
                 BestSellers = bestSellers,
+                Comments = comments
             };
 
             return View(model);

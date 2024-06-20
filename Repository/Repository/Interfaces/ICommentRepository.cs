@@ -12,5 +12,7 @@ namespace Repository.Repository.Interfaces
         Task<List<Comment>> GetAll();
         Task Create(Comment comment);
         Task<List<Comment>> GetCommentByProduct(int id);
+        Task Delete(Comment comment);
+        Task<Comment> GetById(int id);
     }
 }
