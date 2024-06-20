@@ -4,6 +4,7 @@ using Asp_Project.ViewModels.Products.Admin;
 using Domain.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Service.Services;
 using Service.Services.Interfaces;
 
 namespace Asp_Project.Controllers
@@ -14,15 +15,18 @@ namespace Asp_Project.Controllers
         private readonly ICategoryService _categoryService;
         private readonly UserManager<AppUser> _userManager;
         private readonly ICommentService _commentService;
+        private readonly IBasketService _basketService;
         public ProductController(IProductService productService,
                                  ICategoryService categoryService,
                                  UserManager<AppUser> userManager,
-                                 ICommentService commentService)
+                                 ICommentService commentService,
+                                 IBasketService basketService)
         {
             _productService = productService;
             _categoryService = categoryService;
             _userManager = userManager;
             _commentService = commentService;
+            _basketService = basketService;
         }
         [HttpGet]
         public async Task<IActionResult> Index(int? id)
@@ -85,6 +89,43 @@ namespace Asp_Project.Controllers
 
             await _commentService.Create(new Comment { ProductId = productId, UserId = userId,UserComment = comment});
             return Ok();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> AddProductToBasket(int? id,int count)
+        {
+
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Problem();
+            }
+
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            if (id is null) return BadRequest();
+            var dbProduct = await _productService.GetById((int)id);
+            if (await _basketService.ExistProduct(dbProduct.Name, user.Id))
+            {
+                await _basketService.IncreaseExistProductCount(dbProduct.Name, user.Id,count);
+                return Ok();
+            }
+
+
+            Basket basket = new()
+            {
+                ProductName = dbProduct.Name,
+                ProductImage = dbProduct.ProductImages.FirstOrDefault(m => m.IsMain).Image,
+                ProductCount = 1,
+                ProductPrice = dbProduct.Price,
+                UserId = user.Id,
+            };
+            await _basketService.Create(basket);
+
+            List<Basket> products = await _basketService.GetBasketByUser(user.Id);
+
+
+            int productCount = await _basketService.GetBasketProductCount(user.Id);
+            return Ok(new { productCount });
         }
     }
 }

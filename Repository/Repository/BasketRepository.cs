@@ -18,10 +18,10 @@ namespace Repository.Repository
             _context = context;
         }
 
-        public async Task IncreaseExistProductCount(string name,string userId)
+        public async Task IncreaseExistProductCount(string name,string userId, int count = 1)
         {
             var existProduct = _context.Baskets.FirstOrDefault(b => b.ProductName == name && b.UserId == userId); 
-            existProduct.ProductCount++;
+            existProduct.ProductCount += count;
             await _context.SaveChangesAsync();
 
         }

@@ -51,9 +51,9 @@ namespace Service.Services
             return await _basketRepository.GetBasketProductCount(id);
         }
 
-        public async Task IncreaseExistProductCount(string name, string userId)
+        public async Task IncreaseExistProductCount(string name, string userId, int count = 1)
         {
-            await _basketRepository.IncreaseExistProductCount(name,userId);
+            await _basketRepository.IncreaseExistProductCount(name,userId,count);
         }
 
         public async Task Remove(Basket basket)
