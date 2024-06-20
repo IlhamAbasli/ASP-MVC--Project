@@ -13,6 +13,7 @@ namespace Asp_Project.ViewModels
         public List<Feature> Features { get; set; }
         public List<Advertisement> Ads { get; set; }
         public List<Comment> Comments { get; set; }
+        public List<Domain.Models.Statistic> Statistics { get; set; }
         public Banner Banner { get; set; }
 
     }

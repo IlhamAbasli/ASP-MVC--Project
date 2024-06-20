@@ -26,6 +26,7 @@ namespace Repository.Data
         public DbSet<Quality> Qualities { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<Banner> Banners { get; set; }
+        public DbSet<Statistic> Statistics { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -22,6 +22,7 @@ namespace Asp_Project.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly IBasketService _basketService;
         private readonly ICommentService _commentService;
+        private readonly IStatisticService _statisticService;
 
         public HomeController(ICategoryService categoryService,
                               IProductService productService,
@@ -33,7 +34,8 @@ namespace Asp_Project.Controllers
                               IHttpContextAccessor accessor,
                               IBasketService basketService,
                               UserManager<AppUser> userManager,
-                              ICommentService commentService)
+                              ICommentService commentService,
+                              IStatisticService statisticService)
         {
             _categoryService = categoryService;
             _productService = productService;
@@ -46,6 +48,7 @@ namespace Asp_Project.Controllers
             _basketService = basketService;
             _userManager = userManager;
             _commentService = commentService;
+            _statisticService = statisticService;
         }
         public async Task<IActionResult> Index()
         {
@@ -58,7 +61,8 @@ namespace Asp_Project.Controllers
             var banners = await _bannerService.GetAll();
             var vegetables = await _productService.GetVegetables();
             var bestSellers = await _productService.GetBestSellerProducts();
-            var comments = await _commentService.GetAll();  
+            var comments = await _commentService.GetAll();
+            var statistics = await _statisticService.GetAll();
 
             HomeVM model = new()
             {
@@ -71,7 +75,8 @@ namespace Asp_Project.Controllers
                 Vegetables = vegetables,
                 Banner = banners.FirstOrDefault(),
                 BestSellers = bestSellers,
-                Comments = comments
+                Comments = comments,
+                Statistics = statistics,
             };
 
             return View(model);
