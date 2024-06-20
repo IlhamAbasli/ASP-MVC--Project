@@ -1,7 +1,7 @@
 ﻿@model HeaderVM
 
 
-        <!-- Navbar start -->
+<!-- Navbar start -->
 <div class="container-fluid fixed-top">
     <div class="container topbar bg-primary d-none d-lg-block">
         <div class="d-flex justify-content-between">
@@ -27,18 +27,20 @@
                     <a asp-controller="Home" asp-action="Index" class="nav-item nav-link">Home</a>
                     <a asp-controller="Shop" asp-action="Index" class="nav-item nav-link">Shop</a>
                     <a asp-controller="Contact" asp-action="Index" class="nav-item nav-link">Contact</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
-                        @if (User.Identity.IsAuthenticated)
-                        {
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-0 d-flex flex-column align-items-center">
+                                <b><span>Username</span></b>
                                 <p>@User.Identity.Name</p>
                                 <form method="post" asp-controller="Account" asp-action="LogOut">
                                     <button class="btn btn-danger text-white" type="submit">Log out</button>
                                 </form>
                             </div>
-                        }
-                    </div>
+                        </div>
+                    }
+
                 </div>
                 <div class="d-flex m-3 me-0">
                     <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
@@ -46,9 +48,12 @@
                         <i class="fa fa-shopping-bag fa-2x"></i>
                         <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1 product-count" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">@ViewBag.BasketCount</span>
                     </a>
-                    <a asp-action="SignIn" asp-controller="Account" class="my-auto">
-                        <i class="fas fa-user fa-2x"></i>
-                    </a>
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <a asp-action="SignIn" asp-controller="Account" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
+                    }
                 </div>
             </div>
         </nav>

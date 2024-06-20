@@ -9,7 +9,6 @@ namespace Domain.Models
 {
     public class Comment : BaseEntity
     {
-        public string UserFullName { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public string UserComment {  get; set; }
         public int ProductId { get; set; }

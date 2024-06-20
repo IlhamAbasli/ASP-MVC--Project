@@ -215,9 +215,6 @@ namespace Repository.Migrations
                     b.Property<string>("UserComment")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserFullName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 

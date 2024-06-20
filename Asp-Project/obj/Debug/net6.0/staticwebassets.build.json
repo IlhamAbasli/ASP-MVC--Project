@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o7tcTMDhadNkFeUiklLYTVtM3lbKy522AiMrjyuJArg=",
+  "Hash": "3MCOcTNMeVTVhDi1YvbpHAxhOsRvBoSrYqR5eo7xvJ0=",
   "Source": "Asp-Project",
   "BasePath": "_content/Asp-Project",
   "Mode": "Default",
@@ -6971,6 +6971,25 @@
       "OriginalItemSpec": "wwwroot\\js\\basket.js"
     },
     {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\contact.js",
+      "SourceId": "Asp-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\",
+      "BasePath": "_content/Asp-Project",
+      "RelativePath": "js/contact.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\contact.js"
+    },
+    {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\main.js",
       "SourceId": "Asp-Project",
       "SourceType": "Discovered",
@@ -6988,6 +7007,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\product.js",
+      "SourceId": "Asp-Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\",
+      "BasePath": "_content/Asp-Project",
+      "RelativePath": "js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\js\\shop.js",
