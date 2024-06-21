@@ -32,6 +32,7 @@ builder.Services.Configure<IdentityOptions>(opt =>
     opt.Password.RequireNonAlphanumeric = true;
 
     opt.User.RequireUniqueEmail = true;
+
 });
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -58,6 +59,10 @@ builder.Services.AddScoped<IComplaintService, ComplaintService>();
 builder.Services.AddScoped<IComplaintRepository, ComplaintRepository>();
 builder.Services.AddScoped<IStatisticService, StatisticService>();
 builder.Services.AddScoped<IStatisticRepository, StatisticRepository>();
+builder.Services.AddScoped<ISubscriberRepository, SubscriberRepository>();
+builder.Services.AddScoped<ISubscriberService, SubscriberService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 
 var app = builder.Build();
 

@@ -1,4 +1,5 @@
 ﻿using Asp_Project.ViewModels;
+using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Service.Services.Interfaces;
 
@@ -30,5 +31,6 @@ namespace Asp_Project.ViewComponents
 
             return await Task.FromResult(View(response));
         }
+
     }
 }

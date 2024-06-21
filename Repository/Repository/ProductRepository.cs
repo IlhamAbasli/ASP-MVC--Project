@@ -44,8 +44,8 @@ namespace Repository.Repository
 
         public async Task<List<Product>> GetAll()
         {
-            return await _context.Products.Include(m=>m.Category)
-                                          .Include(m=>m.ProductImages)
+            return await _context.Products.Include(m => m.Category)
+                                          .Include(m => m.ProductImages)
                                           .Include(m => m.Details)
                                           .ThenInclude(m => m.Qualities)
                                           .ToListAsync();
@@ -53,9 +53,9 @@ namespace Repository.Repository
 
         public async Task<Product> GetById(int id)
         {
-            return await _context.Products.Where(m=>m.Id == id)
+            return await _context.Products.Where(m => m.Id == id)
                                           .Include(m => m.Details)
-                                          .ThenInclude(m=>m.Qualities)
+                                          .ThenInclude(m => m.Qualities)
                                           .Include(m => m.Category)
                                           .Include(m => m.ProductImages).FirstOrDefaultAsync();
         }
@@ -71,10 +71,10 @@ namespace Repository.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task ChangeMainImage(Product product,int imageId)
+        public async Task ChangeMainImage(Product product, int imageId)
         {
             var images = product.ProductImages.Where(m => m.IsMain == true);
-            foreach(var image in images)
+            foreach (var image in images)
             {
                 image.IsMain = false;
             }
@@ -100,13 +100,14 @@ namespace Repository.Repository
 
         public async Task<List<Product>> GetAllSearchedPaginatedDatas(int page, string searchText, int take = 9)
         {
-            return await _context.Products.Where(m=> m.Name.Trim().ToLower().Contains(searchText.Trim().ToLower()))
+            return await _context.Products.Where(m => m.Name.Trim().ToLower().Contains(searchText.Trim().ToLower()))
                                           .Include(m => m.ProductImages)
                                           .Include(m => m.Category)
                                           .Skip((page - 1) * take)
                                           .Take(take)
                                           .ToListAsync();
         }
+
 
         public async Task<int> GetSearchedCount(string searchText)
         {
@@ -115,11 +116,96 @@ namespace Repository.Repository
 
         public async Task<List<Product>> GetBestSellerProducts()
         {
-            return await _context.Products.Include(m=>m.Category).Include(m=>m.ProductImages).OrderByDescending(m=>m.SellingCount).ToListAsync();
+            return await _context.Products.Include(m => m.Category).Include(m => m.ProductImages).OrderByDescending(m => m.SellingCount).ToListAsync();
         }
         public async Task<List<Product>> GetVegetables()
         {
-            return await _context.Products.Where(m=>m.CategoryId == 3).Include(m=>m.Category).Include(m=>m.ProductImages).ToListAsync();
+            return await _context.Products.Where(m => m.CategoryId == 3).Include(m => m.Category).Include(m => m.ProductImages).ToListAsync();
+        }
+
+        public async Task<List<Product>> GetAllPriceFilteredPaginatedDatas(int page, int price, int take = 9)
+        {
+            return await _context.Products.Where(m => m.Price < price)
+                                          .Include(m => m.ProductImages)
+                                          .Include(m => m.Category)
+                                          .Skip((page - 1) * take)
+                                          .Take(take)
+                                          .ToListAsync();
+        }
+
+        public async Task<int> GetPriceFilteredCount(int price)
+        {
+            return await _context.Products.Where(m => m.Price < price).CountAsync();
+        }
+
+        public async Task<List<Product>> GetCategoryFilteredPaginatedDatas(int page, int categoryId, int take = 9)
+        {
+            return await _context.Products.Where(m => m.CategoryId == categoryId)
+                                          .Include(m => m.ProductImages)
+                                          .Include(m => m.Category)
+                                          .Skip((page - 1) * take)
+                                          .Take(take)
+                                          .ToListAsync();
+        }
+
+        public async Task<int> GetCategoryFilteredCount(int categoryId)
+        {
+            return await _context.Products.Where(m => m.CategoryId == categoryId).CountAsync();
+        }
+
+        public async Task<List<Product>> GetSortedPaginatedDatas(int page, string sortType, int take = 9)
+        {
+            if (sortType == "AtoZ")
+            {
+                return await _context.Products.OrderBy(m => m.Name)
+                                              .Include(m => m.ProductImages)
+                                              .Include(m => m.Category)
+                                              .Skip((page - 1) * take)
+                                              .Take(take)
+                                              .ToListAsync();
+            }
+            else if (sortType == "ZtoA")
+            {
+                return await _context.Products.OrderByDescending(m => m.Name)
+                              .Include(m => m.ProductImages)
+                              .Include(m => m.Category)
+                              .Skip((page - 1) * take)
+                              .Take(take)
+                              .ToListAsync();
+            }
+            else if (sortType == "HtoL")
+            {
+                return await _context.Products.OrderByDescending(m => m.Price)
+                                              .Include(m => m.ProductImages)
+                                              .Include(m => m.Category)
+                                              .Skip((page - 1) * take)
+                                              .Take(take)
+                                              .ToListAsync();
+            }
+            else
+            {
+                return await _context.Products.OrderBy(m => m.Price)
+                              .Include(m => m.ProductImages)
+                              .Include(m => m.Category)
+                              .Skip((page - 1) * take)
+                              .Take(take)
+                              .ToListAsync();
+            }
+        }
+
+        public async Task BuyProducts(List<Basket> basket)
+        {
+            foreach (var item in basket)
+            {
+                var product = _context.Products.FirstOrDefault(m => m.Name.Trim().ToLower() == item.ProductName.Trim().ToLower());
+                product.Count -= item.ProductCount;
+                product.SellingCount += item.ProductCount;
+                if(product.Count == 0)
+                {
+                    await Delete(product);
+                }
+            }
+            await _context.SaveChangesAsync();
         }
     }
 }

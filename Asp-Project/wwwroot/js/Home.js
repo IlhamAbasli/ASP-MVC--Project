@@ -76,4 +76,79 @@
             }
         });
     })
+
+
+    //Subscribe
+    $(document).on('click', '.subscribe', function (e) {
+        e.preventDefault();
+        let subscriberEmail = $(".subscribe-input").val();
+        if (subscriberEmail.trim() == "") {
+            toastr["error"]("You can`t subscribe without email")
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+            return;
+        }
+        $.ajax({
+            url: `Home/Subscribe`,
+            type: 'POST',
+            data: { subscriberEmail },
+            success: function (response) {
+                $(".product-count").text(response.count);
+                toastr["success"]("Thanks for your subscription")
+                toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+                $(".subscribe-input").val("");
+            },
+            error: function (response) {
+                toastr["error"]("Login to add product to basket")
+                toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+            }
+        });
+    })
 })

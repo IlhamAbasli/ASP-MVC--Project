@@ -10,12 +10,15 @@ namespace Asp_Project.Controllers
     public class BasketController : Controller
     {
         private readonly IBasketService _basketService;
+        private readonly IProductService _productService;
         private readonly UserManager<AppUser> _userManager;
         public BasketController(IBasketService basketService,
-                                UserManager<AppUser> userManager)
+                                UserManager<AppUser> userManager,
+                                IProductService productService)
         {
             _basketService = basketService;
             _userManager = userManager;
+            _productService = productService;
         }
         public async Task<IActionResult> Index()
         {
@@ -122,7 +125,26 @@ namespace Asp_Project.Controllers
             return Ok(new { count, totalPrice });
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> BuyProducts()
+        {
+            AppUser user = new();
+            if (User.Identity.IsAuthenticated)
+            {
+                user = await _userManager.FindByNameAsync(User.Identity.Name);
+            }
 
+            List<Basket> products = await _basketService.GetBasketByUser(user.Id);
+
+            await _productService.BuyProducts(products);
+
+            foreach (var product in products)
+            {
+                await _basketService.Remove(product);
+            }
+            return RedirectToAction("Index","Basket");
+        }
 
     }
 }

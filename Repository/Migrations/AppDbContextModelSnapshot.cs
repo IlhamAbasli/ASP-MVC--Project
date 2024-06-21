@@ -482,6 +482,25 @@ namespace Repository.Migrations
                     b.ToTable("Statistics");
                 });
 
+            modelBuilder.Entity("Domain.Models.Subscriber", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<bool>("SoftDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SubscriberEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Subscribers");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")

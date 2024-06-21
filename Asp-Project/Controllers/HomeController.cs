@@ -4,6 +4,7 @@ using Domain.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using Service.Services;
 using Service.Services.Interfaces;
 using System.Diagnostics;
 
@@ -23,6 +24,7 @@ namespace Asp_Project.Controllers
         private readonly IBasketService _basketService;
         private readonly ICommentService _commentService;
         private readonly IStatisticService _statisticService;
+        private readonly ISubscriberService _subscriberService;
 
         public HomeController(ICategoryService categoryService,
                               IProductService productService,
@@ -35,7 +37,8 @@ namespace Asp_Project.Controllers
                               IBasketService basketService,
                               UserManager<AppUser> userManager,
                               ICommentService commentService,
-                              IStatisticService statisticService)
+                              IStatisticService statisticService,
+                              ISubscriberService subscriberService)
         {
             _categoryService = categoryService;
             _productService = productService;
@@ -49,6 +52,7 @@ namespace Asp_Project.Controllers
             _userManager = userManager;
             _commentService = commentService;
             _statisticService = statisticService;
+            _subscriberService = subscriberService;
         }
         public async Task<IActionResult> Index()
         {
@@ -117,6 +121,14 @@ namespace Asp_Project.Controllers
 
             int count = await _basketService.GetBasketProductCount(user.Id);
             return Ok(new { count });
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Subscribe(string subscriberEmail)
+        {
+            await _subscriberService.Create(new Subscriber { SubscriberEmail = subscriberEmail });
+            return Ok();
         }
     }
 }

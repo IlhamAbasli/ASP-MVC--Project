@@ -33,14 +33,13 @@
                     </div>
                     <div class="col-6"></div>
                     <div class="col-xl-3">
-                        <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
-                            <label for="fruits">Default Sorting:</label>
-                            <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light me-3" form="fruitform">
-                                <option value="volvo">Nothing</option>
-                                <option value="saab">Popularity</option>
-                                <option value="opel">Organic</option>
-                                <option value="audi">Fantastic</option>
-                            </select>
+                        <div class="bg-light ps-3 py-3 rounded d-flex justify-content-center mb-4">
+                            <div class="m-0 rounded-0 d-flex flex-column align-items-center fs-6">
+                                <a asp-action="Index" asp-controller="Shop" asp-route-sortType="AtoZ">Sort A-Z</a>
+                                <a asp-action="Index" asp-controller="Shop" asp-route-sortType="ZtoA">Sort Z-A</a>
+                                <a asp-action="Index" asp-controller="Shop" asp-route-sortType="LtoH">Sort price low to high</a>
+                                <a asp-action="Index" asp-controller="Shop" asp-route-sortType="HtoL">Sort price high to low</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,7 +54,7 @@
                                         {
                                             <li>
                                                 <div class="d-flex justify-content-between fruite-name">
-                                                    <a href="#"><i class="fas fa-apple-alt me-2"></i>@item.Name</a>
+                                                    <a asp-route-categoryId = "@item.Id" asp-action="Index" asp-controller="Shop"><i class="fas fa-apple-alt me-2"></i>@item.Name</a>
                                                     <span>(@item.Products.Count)</span>
                                                 </div>
                                             </li>
@@ -66,8 +65,11 @@
                             <div class="col-lg-12">
                                 <div class="mb-3">
                                     <h4 class="mb-2">Price</h4>
-                                    <input type="range" class="form-range w-100" id="rangeInput" name="rangeInput" min="0" max="500" value="0" oninput="amount.value=rangeInput.value">
-                                    <output id="amount" name="amount" min-velue="0" max-value="500" for="rangeInput">0</output>
+                                    <form method="get" asp-controller="Shop" asp-action="Index" enctype="multipart/form-data" class="input-group w-100 mx-auto d-flex">
+                                        <input type="range" name="price" class="form-range w-100 price-range" id="rangeInput" min="0" max="50" value="0" oninput="amount.value=rangeInput.value">
+                                        <output id="amount" min-velue="0" max-value="50" for="rangeInput">0</output>
+                                        <button type="submit" class="search-btn btn btn-primary border-2 border-secondary px-4 position-absolute rounded-pill text-white h-100" style="top: 30px; right: 0;">Filter</button>
+                                    </form>
                                 </div>
                             </div>
                             @*                             <div class="col-lg-12">

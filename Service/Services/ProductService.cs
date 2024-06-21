@@ -17,6 +17,11 @@ namespace Service.Services
             _productRepository = productRepository;
         }
 
+        public async Task BuyProducts(List<Basket> basket)
+        {
+            await _productRepository.BuyProducts(basket);
+        }
+
         public async Task ChangeMainImage(Product product, int id)
         {
             await _productRepository.ChangeMainImage(product, id);
@@ -52,6 +57,11 @@ namespace Service.Services
             return await _productRepository.GetAllPaginatedDatas(page, take);
         }
 
+        public async Task<List<Product>> GetAllPriceFilteredPaginatedDatas(int page, int price, int take = 9)
+        {
+            return await _productRepository.GetAllPriceFilteredPaginatedDatas(page, price, take);   
+        }
+
         public async Task<List<Product>> GetAllSearchedPaginatedDatas(int page, string searchText, int take = 9)
         {
             return await _productRepository.GetAllSearchedPaginatedDatas(page, searchText, take);   
@@ -67,6 +77,16 @@ namespace Service.Services
             return await _productRepository.GetById(id);
         }
 
+        public Task<int> GetCategoryFilteredCount(int categoryId)
+        {
+            return _productRepository.GetCategoryFilteredCount(categoryId);
+        }
+
+        public Task<List<Product>> GetCategoryFilteredPaginatedDatas(int page, int categoryId, int take = 9)
+        {
+            return _productRepository.GetCategoryFilteredPaginatedDatas(page, categoryId, take);    
+        }
+
         public async Task<int> GetCount()
         {
             return await _productRepository.GetCount();
@@ -77,6 +97,11 @@ namespace Service.Services
             return (int)Math.Ceiling((decimal)count / take);
         }
 
+        public async Task<int> GetPriceFilteredCount(int price)
+        {
+            return await _productRepository.GetPriceFilteredCount(price);
+        }
+
         public async Task<List<Quality>> GetQualities()
         {
             return await _productRepository.GetQualities();
@@ -85,6 +110,11 @@ namespace Service.Services
         public async Task<int> GetSearchedCount(string searchText)
         {
             return await _productRepository.GetSearchedCount(searchText);
+        }
+
+        public async Task<List<Product>> GetSortedPaginatedDatas(int page, string sortType, int take = 9)
+        {
+            return await _productRepository.GetSortedPaginatedDatas(page, sortType, take);  
         }
 
         public async Task<List<Product>> GetVegetables()

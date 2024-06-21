@@ -19,10 +19,16 @@ namespace Service.Services.Interfaces
         Task ChangeMainImage(Product product, int id);
         Task<List<Product>> GetAllPaginatedDatas(int page, int take = 9);
         Task<List<Product>> GetAllSearchedPaginatedDatas(int page, string searchText,int take = 9);
+        Task<List<Product>> GetAllPriceFilteredPaginatedDatas(int page, int price, int take = 9);
+        Task<List<Product>> GetCategoryFilteredPaginatedDatas(int page, int categoryId, int take = 9);
+        Task<List<Product>> GetSortedPaginatedDatas(int page, string sortType, int take = 9);
+        Task<int> GetPriceFilteredCount(int price);
         Task<int> GetSearchedCount(string searchText);
+        Task<int> GetCategoryFilteredCount(int categoryId);
         Task<int> GetCount();
         int GetPageCount(int count,int take);
         Task<List<Product>> GetBestSellerProducts();
         Task<List<Product>> GetVegetables();
+        Task BuyProducts(List<Basket> basket);
     }
 }

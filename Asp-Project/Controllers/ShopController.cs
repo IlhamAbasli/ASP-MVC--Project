@@ -25,7 +25,7 @@ namespace Asp_Project.Controllers
             _basketService = basketService;
         }
         [HttpGet]   
-        public async Task<IActionResult> Index(string searchText,int page = 1)
+        public async Task<IActionResult> Index(string searchText,int? price,int? categoryId,string sortType,int page = 1)
         {
             if(searchText is not null)
             {
@@ -47,6 +47,63 @@ namespace Asp_Project.Controllers
 
 
                 return View(searchModel);
+            }
+            else if(price is not null)
+            {
+                var filteredDatas = await _productService.GetAllPriceFilteredPaginatedDatas(page, (int)price);
+                var filteredProductCount = await _productService.GetPriceFilteredCount((int)price);
+                var filteredPageCount = _productService.GetPageCount(filteredProductCount, 9);
+
+                Paginate<Product> filterPagination = new(filteredDatas, filteredPageCount, page);
+
+                var searchCategories = await _categoryService.GetAll();
+                var products = await _productService.GetAll();
+                ProductPageVM filterModel = new()
+                {
+                    Categories = searchCategories,
+                    Products = products,
+                    Pagination = filterPagination,
+                };
+
+                return View(filterModel);
+            }
+            else if(categoryId is not null)
+            {
+                var categoryFilteredDatas = await _productService.GetCategoryFilteredPaginatedDatas(page, (int)categoryId);
+                var categoryFilteredProductCount = await _productService.GetCategoryFilteredCount((int)categoryId);
+                var categoryFilteredPageCount = _productService.GetPageCount(categoryFilteredProductCount, 9);
+
+                Paginate<Product> categoryFilterPagination = new(categoryFilteredDatas, categoryFilteredPageCount, page);
+
+                var searchCategories = await _categoryService.GetAll();
+                var products = await _productService.GetAll();
+                ProductPageVM categoryFilterModel = new()
+                {
+                    Categories = searchCategories,
+                    Products = products,
+                    Pagination = categoryFilterPagination,
+                };
+
+                return View(categoryFilterModel);
+            }
+            else if(sortType is not null)
+            {
+                var sortedDatas = await _productService.GetSortedPaginatedDatas(page, sortType);
+                var sortedCount = await _productService.GetCount();
+                var sortedPageCount = _productService.GetPageCount(sortedCount, 9);
+
+                Paginate<Product> sortedPagination = new(sortedDatas, sortedPageCount, page);
+
+                var searchCategories = await _categoryService.GetAll();
+                var products = await _productService.GetAll();
+                ProductPageVM sortedModel = new()
+                {
+                    Categories = searchCategories,
+                    Products = products,
+                    Pagination = sortedPagination,
+                };
+
+                return View(sortedModel);
             }
             else
             {
