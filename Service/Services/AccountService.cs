@@ -1,9 +1,13 @@
 ﻿using Domain.Models;
+using MailKit.Security;
+using MimeKit;
+using MimeKit.Text;
 using Repository.Repository.Interfaces;
 using Service.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 

@@ -1,8 +1,14 @@
 ﻿using Asp_Project.Helpers.Enums;
 using Asp_Project.ViewModels.Accounts;
 using Domain.Models;
+using MailKit.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MimeKit.Text;
+using MimeKit;
+using MailKit.Net.Smtp;
+using Microsoft.Extensions.Options;
+using Asp_Project.Helpers;
 
 namespace Asp_Project.Controllers
 {
@@ -11,14 +17,17 @@ namespace Asp_Project.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly AppSettings _appSettings;
 
         public AccountController(UserManager<AppUser> userManager,
                                  SignInManager<AppUser> signInManager,
-                                 RoleManager<IdentityRole> roleManager)
+                                 RoleManager<IdentityRole> roleManager,
+                                 IOptions<AppSettings> appSettings)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _appSettings = appSettings.Value;
         }
 
         [HttpGet]
@@ -58,7 +67,57 @@ namespace Asp_Project.Controllers
 
             await _userManager.AddToRoleAsync(newUser, nameof(Roles.Member));
 
-            return RedirectToAction("Index", "Home"); 
+            string token = await _userManager.GenerateEmailConfirmationTokenAsync(newUser);
+            string url = Url.Action(nameof(ConfirmEmail),"Account", new {userId = newUser.Id, token},Request.Scheme,Request.Host.ToString());
+
+            string html = string.Empty;
+
+            using(StreamReader reader = new("wwwroot/templates/emailconfirmation.html"))
+            {
+                html = await reader.ReadToEndAsync();
+            }
+
+            html = html.Replace("{link}", url);
+            html = html.Replace("{Username}", newUser.FullName);
+
+            string subject = "Email confirmation";
+
+            SendEmail(newUser.Email, subject, html);
+
+
+            return RedirectToAction(nameof(VerifyEmail)); 
+        }
+
+        [HttpGet]
+        public IActionResult VerifyEmail()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ConfirmEmail(string userId,string token)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            await _userManager.ConfirmEmailAsync(user, token);
+            return RedirectToAction(nameof(SignIn));
+        }
+
+
+        public void SendEmail(string to, string subject, string html, string from = null)
+        {
+            // create message
+            var email = new MimeMessage();
+            email.From.Add(MailboxAddress.Parse(from ?? _appSettings.From));
+            email.To.Add(MailboxAddress.Parse(to));
+            email.Subject = subject;
+            email.Body = new TextPart(TextFormat.Html) { Text = html };
+
+            // send email
+            using var smtp = new SmtpClient();
+            smtp.Connect(_appSettings.Server, _appSettings.Port, SecureSocketOptions.StartTls);
+            smtp.Authenticate(_appSettings.Username, _appSettings.Password);
+            smtp.Send(email);
+            smtp.Disconnect(true);
         }
 
         [HttpPost]

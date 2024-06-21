@@ -520,3 +520,9 @@ C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project\obj\Debug\net6.0\refint\As
 C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project\obj\Debug\net6.0\Asp-Project.pdb
 C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project\obj\Debug\net6.0\Asp-Project.genruntimeconfig.cache
 C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project\obj\Debug\net6.0\ref\Asp-Project.dll
+C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project\bin\Debug\net6.0\MailKit.dll
+C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project\bin\Debug\net6.0\MimeKit.dll
+C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project\bin\Debug\net6.0\System.Formats.Asn1.dll
+C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\FX706HE\Desktop\ASP-MVC--Project\Asp-Project\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

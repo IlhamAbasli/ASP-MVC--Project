@@ -1,3 +1,4 @@
+using Asp_Project.Helpers;
 using Domain.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -33,7 +34,10 @@ builder.Services.Configure<IdentityOptions>(opt =>
 
     opt.User.RequireUniqueEmail = true;
 
+    opt.SignIn.RequireConfirmedEmail = true;
 });
+
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("Smtp"));
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();

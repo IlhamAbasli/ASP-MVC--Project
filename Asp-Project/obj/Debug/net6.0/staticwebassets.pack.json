@@ -1897,6 +1897,10 @@
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\ASP-MVC--Project\\Asp-Project\\wwwroot\\templates\\emailconfirmation.html",
+      "PackagePath": "staticwebassets\\templates\\emailconfirmation.html"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Asp-Project.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

@@ -49,6 +49,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.31, )"
@@ -285,6 +289,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
